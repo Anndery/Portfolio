@@ -1,0 +1,114 @@
+# config
+
+
+# Update dependencies and resolve compatibility warning from pytest
+
+# Fix issue where empty input was not validated before passing to the parser
+
+# Handle edge case when the response body is empty but status is 200
+
+# Add a note in the README about the breaking change in 2.0
+
+# Refactor exports so the public API is clearer and easier to use
+
+# Remove hardcoded credentials and move to env-based configuration
+
+# Clean up the deprecated alias and point callers to the new name
+
+# Refactor the parser to use a proper state machine instead of regex
+
+# Implement retry logic for the API client when the remote returns 5xx
+
+# Improve the startup time by lazy-loading the heavy modules
+
+# Implement a small in-memory cache for the config to avoid re-reading
+
+# Correct typo in the error message shown when validation fails
+
+# Add integration test that covers the full flow from request to response
+
+# Simplify the config merge logic so overrides are predictable
+
+# Update documentation to reflect the new API and usage examples
+
+# Improve the default config so it works out of the box for dev
+
+# Remove redundant check that was already covered by the validator
+
+# Fix the test that was flaky due to reliance on system time
+
+# Update the contributing guide with the new review process
+
+# Update the example config with all available options and comments
+
+# Add proper error handling for invalid config so the app doesn't crash on startup
+
+# Update the example config with all available options and comments
+
+# Remove obsolete workaround now that the upstream bug is fixed
+
+# Correct the docstring to match the actual behavior of the function
+
+# Fix issue where empty input was not validated before passing to the parser
+
+# Handle the case when the external service returns an empty list
+
+# Add a note in the README about the breaking change in 2.0
+
+# Add a unit test for the edge case when the list is empty
+
+# Correct the formula used for calculating the backoff delay
+
+# Refactor error handling to use a custom exception hierarchy
+
+# Simplify the CLI by merging the two similar subcommands into one
+
+# Support both relative and absolute paths for the config file
+
+# Adjust the default concurrency limit based on load test results
+
+# Bump dependency to get the security fix for the reported CVE
+
+# Bump the dependency to fix the compatibility issue with Python 3.12
+
+# Improve the CLI help text so it's clear how to use each option
+
+# Add a unit test for the edge case when the list is empty
+
+# Bump the Docker base image to get the latest security patches
+
+# Support both YAML and JSON config formats for flexibility
+
+# Handle the partial write case and retry the remaining bytes
+
+# Adjust the pool size to match the actual concurrency we need
+
+# Support config reload without restart via SIGHUP or file watch
+
+# Adjust the threshold so we only log when it's actually an issue
+
+# Improve the CLI help text so it's clear how to use each option
+
+# Refactor config loading into a separate module for better testability
+
+# Update the example config with all available options and comments
+
+# Implement proper backoff with jitter for the retry logic
+
+# Handle the case when the external service returns an empty list
+
+# Remove the experimental feature that didn't make it into the release
+
+# Fix the memory leak in the long-running worker process
+
+# Implement request ID propagation for better tracing across services
+
+# Implement request ID propagation for better tracing across services
+
+# Remove the deprecated wrapper and use the library API directly
+
+# Clean up the TODO comments that were already addressed
+
+# Update the changelog with the fixes included in this release
+
+# Adjust the default concurrency limit based on load test results

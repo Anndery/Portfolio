@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  /*color: rgba(255, 255, 255, 0.87);*/
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 1000;
+  color: #343F56;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #343F56;
+}
+
+body {
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.btn-reset {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.btn-reset:hover {
+  border-color: #343F56;
+}
+.btn-reset:focus,
+.btn-reset:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /*color: #213547;*/
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #343F56;
+  }
+  .btn-reset {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Custom Animations */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 30s linear infinite;
+}
+
+.animate-scroll-left:hover {
+  animation-play-state: paused;
+}
+
+/* Speech bubble animations */
+@keyframes blowUp {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 0;
+    filter: blur(2px);
+  }
+  50% {
+    transform: scale(1.1) rotate(2deg);
+    filter: blur(1px);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes burst {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.8;
+    filter: blur(2px);
+  }
+  100% {
+    transform: scale(0.3);
+    opacity: 0;
+    filter: blur(4px);
+  }
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar styling */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  @apply bg-gray-100 rounded-full;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  @apply bg-purple-300 rounded-full;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  @apply bg-purple-400;
+}
