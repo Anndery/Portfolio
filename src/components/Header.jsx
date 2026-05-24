@@ -6,7 +6,7 @@ const menu = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
   { name: 'Experience', href: '#experience' },
-  { name: 'Contact', href: 'mailto:sensacional157@hotmail.com' },
+  { name: 'Contact', href: 'mailto:annderylopes0726@gmail.com' },
 ]
 
 export default function Header() {

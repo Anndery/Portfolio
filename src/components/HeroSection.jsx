@@ -39,7 +39,7 @@ const HeroSection = () => {
             View Projects
           </a> */}
           <a
-            href="mailto:sensacional157@hotmail.com"
+            href="mailto:annderylopes0726@gmail.com"
             className="bg-white hover:bg-purple-50 text-purple-600 px-8 py-3 rounded-full font-semibold border-2 border-purple-300 shadow-md hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
           >
             Contact Me

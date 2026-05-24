@@ -8,7 +8,7 @@ export const config = {
   },
 
   contact: {
-    email: import.meta.env.VITE_EMAIL || 'sensacional157@hotmail.com',
+    email: import.meta.env.VITE_EMAIL || 'annderylopes0726@gmail.com',
     linkedin: import.meta.env.VITE_LINKEDIN || 'https://www.linkedin.com/in/anndery-lopes-732864214/',
     // github: import.meta.env.VITE_GITHUB || '',
   },
